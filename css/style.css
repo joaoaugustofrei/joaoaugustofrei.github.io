@@ -1,0 +1,11 @@
+/* Em prol da organização do código, podemos criar arquivos css diferentes para cada parte do site. Podemos fazer de duas formas: linkar direto no HTML, fazendo outro link, ou usar:
+
+@import './header.css' 
+
+aqui no CSS principal msm -> é a melhor opção em termos de carregamento*/
+@import "/css/global.css";
+@import "/css/header.css";
+@import "/css/introducao.css";
+@import "/css/experiencia.css";
+@import "/css/formacao.css";
+@import "/css/footer.css";

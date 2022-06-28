@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Freire - Desenvolvedor Front End e Cientista de Dados</title>
+  <meta name="description" content="Desenvolvedor e Cientista de Dados">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>João Freire</h1>
+    <nav>
+      <ul class="header-menu">
+        <!-- para linkar um botão a uma outra seção da mesma pagina, usamos o #topico! -->
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Agora vamos fazer a introdução do site, que é o mais importante - se alguém cai nesse site, ele precisa saber qual é o propósito do site -->
+  <main class="container introducao">
+    <img src="/img/perfil.jpg" alt="Lobo Cinza" width="360" height="520">
+    <div>
+      <!-- Para introduzirmos quebra de linha de um jeito fácil é só usar a tag <br> - não precisa fechar. -->
+      <h1>Desenvolvedor<br>Front End &<br>Cientista<br>de Dados</h1>
+      <p>Mestre em Economia Aplicada trabalhando com desenvolvimento Front End e Ciência de Dados.</p>
+    </div>
+  </main>
+
+  <section class="container experiencia" id="experiencia" aria-label="Experiência">
+    <h2 class="subtitulo">Experiência</h2>
+    <div>
+      <p class="experiencia-texto">Desenvolvo projetos de site como o da Storm Guitars, minha empresa de instrumentos musicais, utilizando <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.</p>
+      <p class="experiencia-texto">Em termos de Ciência de Dados, utilizo <strong>Python</strong>, <strong>SQL</strong>, <strong>Excel</strong> e <strong>R</strong> para extrair, limpar e transformar dados em insight.</p>
+
+      <div class="empresa">
+        <span class="empresa-ano">2019-2022</span>
+        <h3 class="empresa-titulo">Universidade Federal de Juiz de Fora</h3>
+        <span class="empresa-titulo">Bolsista de Mestrado em Economia Aplicada</span>
+        <p class="empresa-texto">Produção de <a href="http://repositorio.ufjf.br:8080/jspui/handle/ufjf/14055">dissertação</a> inovadora intitulada “The Industrial Organization of Public Higher Education in Brazil: market structure, behavior, and efficiency“, na qual faço tratamento e limpeza de dados complexos (ETL) e utilizo ferramentas de análise pertinentes à ciência de dados e à organização industrial para obter um relatório da dinâmica concorrencial no setor de Educação Superior Pública de alta qualidade.</p>
+        <ul class="empresa-habilidades">
+          <li>Excel</li>
+          <li>Python</li>
+          <li>R</li>
+        </ul>
+      </div>
+
+      <div class="empresa">
+        <span class="empresa-ano">2018</span>
+        <h3 class="empresa-titulo">Elite Investimentos</h3>
+        <span class="empresa-titulo">Estagiário de Balcão de Operações</span>
+        <p class="empresa-texto">Auxiliar analistas e operadores em tarefas diárias e relacionamento e prospecção de clientes, além de apresentação dos produtos de investimento da corretora.
+        </p>
+        <ul class="empresa-habilidades">
+          <li>Excel</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="formacao" id="formacao" aria-label="Formação">
+    <div class="formacao-container">
+      <h2 class="subtitulo">Formação</h2>
+
+      <div>
+        <p class="formacao-texto">Sou Mestre em Economia Aplicada pela a UFJF e Bacharel em Ciências Econômicas pela UFRJ.</p>
+
+        <ul class="faculdade-lista">
+          <li class="faculdade">
+            <span class="faculdade-tipo">Mestre</span>
+            <h3 class="faculdade-curso">Economia Aplicada</h3>
+            <span class="faculdade-instituicao">UFJF</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade-tipo">Bacharel</span>
+            <h3 class="faculdade-curso">Ciências Econômicas</h3>
+            <span class="faculdade-instituicao">UFRJ</span>
+          </li>
+        </ul>
+        <div class="formacao-extra">
+          <div class="cursos">
+            <h3>Cursos Intensivos</h3>
+            <ul>
+              <li>HTML e CSS para Iniciantes <span> Origamid, 46h</span></li>
+              <li>JavaScript Completo ES6 <span> Origamid, 74h</span></li>
+              <li>Excel Impressionador <span> Hashtag Treinamentos, 100h</span></li>
+              <li>Python Impressionador <span> Hashtag Treinamentos, 80h</span></li>
+              <li>Introduction to R Programming <span> 365 Data Science, 6h</span></li>
+              <li>Python Programmer Bootcamp <span> 365 Data Science, 11h</span></li>
+              <li>Data Analysis with Excel Pivot Tables <span> 365 Data Science, 2h</span></li>
+              <li>SQL <span> 365 Data Science, 8h</span></li>
+            </ul>
+          </div>
+
+          <div class="idiomas">
+            <h3>Idiomas</h3>
+            <ul>
+              <li>Inglês fluente <span> Conceito A no FCE/Cambridge</span></li>
+              <li>Francês intermediário <span> Wizard</span></li>
+              <li>Espanhol intermediário <span> autodidata</span></li>
+              <li>Alemão básico <span> autodidata</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projetos" id="projetos" aria-label="Projetos"></section>
+
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <p class="footer-texto">Disponível para entrevistas e novos projetos!</p>
+      <ul class="footer-contato">
+        <li>joaoaugustofrei@gmail.com</li>
+        <li>+55 21 96694-4970</li>
+        <li><a href="https://www.instagram.com/joaoaugustofrei/">@instagram</a></li>
+      </ul>
+      <p class="footer-copy">João Freire. Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

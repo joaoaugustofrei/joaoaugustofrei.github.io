@@ -1,0 +1,74 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* Queremos que o detalhe fique posicionado atrás do texto, o pai tem que ser position-relative e temos que usar o z-index: -1;*/
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("/img/detalhe.svg") no-repeat center;
+  position: absolute;
+  top: 0px;
+  left: -40px;
+  z-index: -1;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+/* Como eu não quero quebrar a palavra desenvolvedor, abaixo de um certo tamanho eu vou só diminuir o tamanho da fonte */
+
+@media (max-width: 1000px) {
+  .header h1 {
+    font-size: 3.5rem;
+  }
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Agora no proximo ponto de quebra */
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+  }
+  /* Agora para diminuir o detalhe */
+  .introducao h1::before {
+    width: 30px;
+    height: 15px;
+    left: 0px;
+    top: -10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    display: none;
+  }
+}
