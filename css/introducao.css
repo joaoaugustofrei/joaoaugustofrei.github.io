@@ -15,8 +15,6 @@
   position: relative;
 }
 
-/* Queremos que o detalhe fique posicionado atrás do texto, o pai tem que ser position-relative e temos que usar o z-index: -1;*/
-
 .introducao h1::before {
   content: "";
   display: block;
@@ -34,7 +32,9 @@
   color: #525252;
 }
 
-/* Como eu não quero quebrar a palavra desenvolvedor, abaixo de um certo tamanho eu vou só diminuir o tamanho da fonte */
+.introducao a {
+  text-decoration: none;
+}
 
 @media (max-width: 1000px) {
   .header h1 {
@@ -45,8 +45,6 @@
   }
 }
 
-/* Agora no proximo ponto de quebra */
-
 @media (max-width: 800px) {
   .introducao {
     grid-template-columns: 1fr 1fr;
@@ -55,7 +53,6 @@
   .introducao h1 {
     font-size: 2rem;
   }
-  /* Agora para diminuir o detalhe */
   .introducao h1::before {
     width: 30px;
     height: 15px;

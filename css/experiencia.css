@@ -19,6 +19,11 @@
   color: #525252;
 }
 
+.experiencia-texto a {
+  text-decoration: none;
+  color: #36003d;
+}
+
 .experiencia-texto strong {
   color: #141414;
 }
